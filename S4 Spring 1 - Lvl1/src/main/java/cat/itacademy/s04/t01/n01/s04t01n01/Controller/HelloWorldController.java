@@ -14,7 +14,7 @@ public class HelloWorldController {
         return saludo;
     }
 
-    @GetMapping("/greet2")
+    @GetMapping("/greet2/{name}")
     private String greet_2(@PathVariable(value = "name", required = false) String name){
         String saludo = "Hello, " + name + ". You are executing a maven project.";
         return saludo;

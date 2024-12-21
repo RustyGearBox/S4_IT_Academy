@@ -10,13 +10,13 @@ public class HelloWorldController {
 
     @GetMapping("/greet1")
     private String greet_1(@RequestParam(value = "name", defaultValue = "Unknown") String name){
-        String saludo = "Hello, " + name + ". You are executing a maven project.";
+        String saludo = "Hello, " + name + ". You are executing a gradle project.";
         return saludo;
     }
 
-    @GetMapping("/greet2")
+    @GetMapping("/greet2/{name}")
     private String greet_2(@PathVariable(value = "name", required = false) String name){
-        String saludo = "Hello, " + name + ". You are executing a maven project.";
+        String saludo = "Hello, " + name + ". You are executing a gradle project.";
         return saludo;
     }
 
