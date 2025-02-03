@@ -1,49 +1,57 @@
-# **Spring Boot Project with Gradle**
+# Spring Boot Project with Gradle
 
-This project is a REST API developed with Spring Boot and Gradle. Its goal is to provide two endpoints that allow greeting users using different types of parameters in HTTP requests.
+This project is a REST API developed with Spring Boot and Gradle. Its goal is to provide two endpoints that allow greeting users with different types of parameters in the HTTP requests.
 
-**Prerequisites**  
-To run this project, you need:
+## Prerequisites
 
-- Java installed
-- Gradle installed (optional)
-- Create a project in Spring Initializr with Gradle as the dependency manager
-- Import the project into a development environment such as IntelliJ IDEA or Eclipse
+To run this project, you need to:
 
-**Configuration**  
-The server is configured to run on port 9001. This is specified in the application.properties file:
+- Have [Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) installed
+- Have [Gradle](https://gradle.org/install/) installed (optional)
+- Create a project in [Spring Initializr](https://start.spring.io/) with Gradle as the dependency manager
+- Import the project into a development environment like [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [Eclipse](https://www.eclipse.org/downloads/)
 
-`server.port=9001`
+## Configuration
 
-**Endpoints**  
-**GET /greet_1 (RequestParam)**  
-Receives the "name" parameter as an optional RequestParam.  
-If not provided, the default value is "Unknown".  
-Example usage:  
-http://localhost:9001//greet_1
-http://localhost:9001//greet_1?name=RustyGearBox
+The server is configured to run on port 9001. This is specified in the `application.properties` file:
 
-**GET /greet_2 (PathVariable)**  
-Receives the "name" parameter as an optional PathVariable.  
-If not provided, the default value is "Unknown".  
-Example usage:  
-http://localhost:9001/greet_2  
-http://localhost:9001/greet_2/RustyGearBox
+```properties
+server.port=9001
+```
 
-**Basic Gradle Commands**  
-This project includes the Gradle Wrapper, meaning that it's not necessary to have Gradle installed globally. You can run commands using `./gradlew` (Linux/macOS) or `gradlew.bat` (Windows), and Gradle will be downloaded automatically if it's not already present.
+## Endpoints
+
+### GET `/greet1` (RequestParam)
+
+- Receives the `name` parameter as an optional RequestParam.
+- If not provided, the default value is "UNKNOWN".
+- Example usage:
+  - `http://localhost:9001/greet_1`
+  - `http://localhost:9001/greet_1?name=RustyGearBox`
+
+### GET `/greet2` (PathVariable)
+
+- Receives the `name` parameter as an optional PathVariable.
+- If not provided, the default value is "UNKNOWN".
+- Example usage:
+  - `http://localhost:9001/greet2`
+  - `http://localhost:9001/greet2/RustyGearBox`
+
+## Basic Gradle Commands
+
+This project includes the **Gradle Wrapper**, which means you don't need to have Gradle installed globally. You can run the commands using `./gradlew` (Linux/macOS) or `gradlew.bat` (Windows), and Gradle will automatically be downloaded if it's not already present.
 
 To run the project locally, clone it and use the following commands:
 
-- To build the project:  
-`./gradlew build`
-
-- To clean the project:  
-`./gradlew clean`
-
-- To run the application:  
-`./gradlew bootRun`
-
---- 
-
-Let me know if you need further modifications!
+- **Build the project:**
+  ```sh
+  ./gradlew build
+  ```
+- **Clean the project:**
+  ```sh
+  ./gradlew clean
+  ```
+- **Run the application:**
+  ```sh
+  ./gradlew bootRun
+  ```
