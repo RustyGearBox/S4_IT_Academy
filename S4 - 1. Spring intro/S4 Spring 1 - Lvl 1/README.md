@@ -21,21 +21,21 @@ server.port=9000
 
 ## Endpoints
 
-### GET `/greet_1` (RequestParam)
+### GET `/greet1` (RequestParam)
 
 - Receives the `name` parameter as an optional RequestParam.
 - If not provided, the default value is "UNKNOWN".
 - Usage example:
-    - `http://localhost:9000/greet_1`
-    - `http://localhost:9000/greet_1?name=myName`
+    - `http://localhost:9000/greet1`
+    - `http://localhost:9000/greet1?name=myName`
 
-### GET `/greet_2` (PathVariable)
+### GET `/greet2` (PathVariable)
 
 - Receives the `name` parameter as an optional PathVariable.
 - If not provided, the default value is "UNKNOWN".
 - Usage example:
-    - `http://localhost:9000/greet_2`
-    - `http://localhost:9000/greet_2/myName`
+    - `http://localhost:9000/greet2`
+    - `http://localhost:9000/greet2/myName`
 
 ## Basic Maven Commands
 
