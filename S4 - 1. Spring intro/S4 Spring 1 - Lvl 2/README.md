@@ -26,8 +26,8 @@ server.port=9001
 - Receives the `name` parameter as an optional RequestParam.
 - If not provided, the default value is "UNKNOWN".
 - Example usage:
-  - `http://localhost:9001/greet_1`
-  - `http://localhost:9001/greet_1?name=RustyGearBox`
+  - `http://localhost:9001/greet1`
+  - `http://localhost:9001/greet1?name=RustyGearBox`
 
 ### GET `/greet2` (PathVariable)
 
