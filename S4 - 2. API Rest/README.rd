@@ -15,28 +15,38 @@ The applications also include logging and Swagger documentation.
 
 ## Dependencies:
 - Spring Boot DevTools
-- Spring Data JPA 
+- Spring Web
+- Spring Data JPA (Level 1 & 2)
 - Lombok
+- Swagger
+- Spring Data MongoDB (Level 3)
 - H2 (Level 1)
 - MySQL Driver (Level 2)
 
+## Swagger api documentation at:
+**http://localhost:8080/swagger-ui/index.html#/**
+
 ## To run a project:
+
 Move to the base folder of the project you want to run and:
 
 
-- **Build the project:**
-  ```sh
-  ./gradlew build
-  ```
-- **Clean the project:**
-  ```sh
-  ./gradlew clean
-  ```
-- **Run the application:**
-  ```sh
-  ./gradlew bootRun
-  ```
+- Compile the project
+```bash
+mvn compile
+```
+- Pack the project
+```bash
+mvn package
+```
+- Clean the project
+```bash
+mvn clean
+```
 - Execute the application
+```bash
+mvn spring-boot:run
+```
 ```bash
 mvn spring-boot:run
 ```
