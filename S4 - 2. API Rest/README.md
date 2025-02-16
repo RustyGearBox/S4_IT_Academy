@@ -1,4 +1,4 @@
-# 🚀 4.2-API-REST
+# API REST
 
 A simple Java Spring API that performs CRUD with:
 
